@@ -89,6 +89,7 @@ module Onebox
           mlb.com
           myspace.com
           nba.com
+          notebook.ai
           npr.org
           nytimes.com
           photobucket.com
