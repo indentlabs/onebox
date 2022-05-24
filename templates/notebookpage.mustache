@@ -1,10 +1,10 @@
-{{#image}}<img src="{{image}}" class="thumbnail"/>{{/image}}
+{{#image}}
+  <img src="{{image}}" class="thumbnail"/>
+{{/image}}
 
-<h3><a href="{{link}}" target="_blank" rel="noopener">{{title}}</a></h3>
-
-{{#path}}
-  <p><a href="{{link}}" target="_blank" rel="noopener">{{path}}</a></p>
-{{/path}}
+<h3>
+  <a href="{{link}}" target="_blank" rel="noopener">{{title}}</a>
+</h3>
 
 {{#description}}
   <p>
@@ -13,3 +13,11 @@
     </span>
   </p>
 {{/description}}
+
+{{#path}}
+  <p>
+    <sm>
+      <a href="{{link}}" target="_blank" rel="noopener">{{path}}</a>
+    </sm>
+  </p>
+{{/path}}
