@@ -43,20 +43,20 @@ module Onebox
           link: url,
           image: og.image,
           title: Onebox::Helpers.truncate(title, 250),
-          path: display_path,
+          path: url,
           description: display_description,
           favicon: get_favicon
         }
       end
 
-      def extract_path(root, max_length)
-        path = url.split('#')[0].split('?')[0]
-        path = path["#{root}/tree/".length..-1]
+      # def extract_path(root, max_length)
+      #   path = url.split('#')[0].split('?')[0]
+      #   path = path["#{root}/tree/".length..-1]
 
-        return unless path
+      #   return unless path
 
-        path.length > max_length ? path[-max_length..-1] : path
-      end
+      #   path.length > max_length ? path[-max_length..-1] : path
+      # end
 
       def clean_description(description, title, max_length)
         return unless description
